@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .miclase{
+            color: purple;
+          background: yellow ; 
+        }
+    </style>
+</head>
+<body>
+    
+<a href=""></a>
+    
+    <h1>un titulo</h1>
+    <h2>esto es un subtitulos</h2>
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, incidunt optio? Unde nostrum consequuntur itaque rerum debitis corrupti quod deserunt! Ex non aliquam aut reprehenderit cum, quas beatae aspernatur officia.
+    </p>
+<p id="segundo parrafo" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda quis reiciendis dolorem aliquam laboriosam suscipit. Placeat vitae non ipsam assumenda incidunt odio, voluptatibus in est optio veniam suscipit eaque?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius harum velit vero cumque facere modi, aspernatur ad. Quasi ab excepturi labore ea ipsa sed, voluptatibus deserunt beatae perspiciatis adipisci eius?</p>
+
+<script>
+  
+ //elementosP=document.getElementsByTagName("h1");
+ // elementosid=document.getElementById("segundo parrafo");
+
+
+   //esto es para crear un elemento para unir un elemento
+    elem= document.createElement("p");
+    Text=document.createTextNode("soy un nuevo parrafo Draven ");
+    //es para crear una clase a un elemento mas su identificador
+    elem.setAttribute("class","miclase");
+     //este elemento permite unir los variables si tiene que ver con p a text o etc
+    
+        
+     elem.appendChild(Text);
+//pegar el body un elemento
+    document.body.appendChild(elem);
+
+      //para poner un imagen
+
+      Imagen=document.createElement("img");
+      Imagen.setAttribute("alt","imagen op");
+      Imagen.setAttribute("src","1.jpg");
+      Imagen.setAttribute("width","400px");
+      Imagen.setAttribute("height","200px");
+      document.body.appendChild(Imagen)
+   // agrear un enlace
+
+   enlace=document.createElement("a");
+   A=document.createTextNode("soy un enlace");
+   enlace.appendChild(A);
+   enlace.setAttribute("href","http://www.cbn.edu.co/");
+   
+   document.body.appendChild(enlace);
+   //agreagar una tabla
+   //primera tabla
+  tabla=document.createElement("table");
+  th=document.createElement("th");
+  tr=document.createElement("tr");
+  td=document.createElement("td")
+  td2=document.createElement("td");
+  td3=document.createElement("td");
+  info=document.createTextNode("asignatura");
+  info2=document.createTextNode("matematicas")
+  info3=document.createTextNode("ingles");
+  info4=document.createTextNode("español")
+  th.appendChild(info);
+  td.appendChild(info2);
+  td2.appendChild(info3);
+  td3.appendChild(info4);
+  tr.appendChild(td);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tabla.appendChild(td);
+  tabla.appendChild(td2);
+  tabla.appendChild(td3);
+  
+  document.body.appendChild(tabla)
+  
+
+
+  
+ 
+
+ 
+
+</script>
+</body>
+</html>
